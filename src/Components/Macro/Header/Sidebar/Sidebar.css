@@ -1,0 +1,56 @@
+.sidebar {
+    height: 100dvh;
+    min-height: 100vh;
+    min-width: 250px;
+    padding: 10px 15px;
+    background-color: var(--card-color);
+    box-shadow: 5px 0px 15px -5px gray;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    position: fixed;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100vh;
+    }
+
+    .sidebar.open {
+        left: 0vh;
+    }
+
+    .sidebar ul li a button {
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        position: sticky;
+        top: 0;
+        align-self: start;
+    }
+}
+
+.sidebar ul li a button {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    outline: none;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.sidebar a.active button {
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: .4s;
+}

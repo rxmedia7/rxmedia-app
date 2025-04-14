@@ -1,0 +1,70 @@
+.student_main {
+  min-width: 769px;
+  width: 100%;
+}
+
+.table-wrapper {
+  border-radius: 12px;
+  background: var(--secondary-color);
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+th {
+  color: #fff;
+}
+
+td {
+  border: none;
+  border-bottom: 1px solid #11a44c;
+}
+
+th.first-head {
+  border-top-left-radius: 12px;
+}
+
+th.last-head {
+  border-top-right-radius: 12px;
+}
+
+.edit-btn,
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.edit-btn {
+  color: #0a84ff;
+}
+
+.delete-btn {
+  color: #ff3b30;
+}

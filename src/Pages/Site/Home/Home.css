@@ -1,0 +1,78 @@
+.home h1 {
+    color: var(--text-color);
+}
+
+.home p {
+    color: var(--text-color);
+}
+
+.home {
+    padding: 20px;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 225px 225px 225px;
+    grid-template-rows: 225px 225px;
+    grid-template-areas:
+        "student student group"
+        "teacher debtor group";
+    gap: 20px;
+}
+
+.student_nm {
+    grid-area: student;
+}
+
+.teacher_nm {
+    grid-area: teacher;
+}
+
+.debtor_nm {
+    grid-area: debtor;
+}
+
+.group_nm {
+    grid-area: group;
+}
+
+.student_nm,
+.teacher_nm,
+.debtor_nm,
+.group_nm {
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.count_info p {
+    text-align: left;
+    padding: 10px 15px 0px;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.st_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 30px 20px 10px;
+}
+
+.stat_details {
+    display: block;
+    text-align: center;
+    padding: 5px 15px 10px 15px;
+}
+
+#count {
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    color: var(--primary-color);
+}
