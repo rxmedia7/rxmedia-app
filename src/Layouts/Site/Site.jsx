@@ -20,6 +20,7 @@ function Site() {
       e.stopPropagation();
       sidebar.classList.toggle('open');
     };
+    
 
     const closeSidebar = (e) => {
       if (
