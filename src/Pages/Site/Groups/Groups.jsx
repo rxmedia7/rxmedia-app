@@ -25,7 +25,8 @@ const Groups = () => {
                 <button id='add_gr'>Yangi guruh yaratish</button>
             </div>
         </div>
-    );
+    );  
 };
 
 export default Groups;
+
