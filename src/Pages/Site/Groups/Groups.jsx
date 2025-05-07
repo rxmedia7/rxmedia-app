@@ -21,6 +21,9 @@ const Groups = () => {
                 <button key={index} onClick={() => openGroup(group)}>{group}</button>
             ))}
             {selectedGroup && <GroupModal group={selectedGroup} onClose={closeGroup} />}
+            <div className='add_group'>
+                <button id='add_gr'>Yangi guruh yaratish</button>
+            </div>
         </div>
     );
 };
